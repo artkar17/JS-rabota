@@ -1,3 +1,3 @@
-let str = 'xxz x23456z xdwz';
-let a = str.replace(/x[^a-z]+z/g, '!');
+let str = 'xxz x23456z xDwz';
+let a = str.replace(/x[^A-Z]+z/g, '!');
 console.log(a)

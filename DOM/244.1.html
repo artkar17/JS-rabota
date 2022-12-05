@@ -4,23 +4,31 @@
 		
 	</head>
 <body>
-    <button id="button">?</button>
+   
+    
+
     <p id="elem1">text</p>
-    <p id="elem2">text</p>
-    <p id="elem3">text</p>
-    <p id="elem4">text</p>
-    <p id="elem5">text</p>
+    <p id="elem2">teefe</p>
+    <p id="elem3">33fle</p>
+    <p id="elem4">kfe</p>
+    <p id="elem5">trmrmore</p>
 
     <script>
-let button = document.querySelectr('#button');
-button.addEventListener('click', func);
-function func() {
-    let a = elem1;
-    console.log(a('message'));
+let elem1 = document.querySelector('#elem1');
+let elem2 = document.querySelector('#elem2');
+let elem3 = document.querySelector('#elem3');
+let elem4 = document.querySelector('#elem4');
+let elem5 = document.querySelector('#elem5');
 
-    <!-- let elem1 = document.querySelector('#elem1');
-elem1.addEventListener(func1); -->
+function func() {
+	console.log('message');
 }
+
+elem1.addEventListener('click', func);
+elem2.addEventListener('click', func);
+elem3.addEventListener('click', func);
+elem4.addEventListener('click', func);
+elem5.addEventListener('click', func);
 
 
     </script>

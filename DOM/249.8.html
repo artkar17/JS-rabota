@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+<body>
+    <div class="flex">
+        <div class="c1">
+            <img  id="img" width="400px" height="500" src="https://www.hse.ru/data/2017/05/17/1171369516/zvezdnoe_nebo.jpeg.(586x434x123).jpeg">
+        </div>
+        </div>
+        <div class="c2">
+            <button id="button">1 на 2</button>
+            <button id="button1" style="margin-left: 80px;" >2 на 1</button>
+        </div>    
+    <style>
+        .flex{
+            display: flex;
+            justify-content: center;
+            margin-top: 4%;
+        }     
+        .c1{
+            display: flex;            
+        }
+        .c2{
+            display: flex;
+            justify-content: center;
+            margin-top: 2%;            
+        }
+    </style>
+    <script>
+let img = document.querySelector('#img');
+let img1 = document.querySelector('#img1');
+let button = document.querySelector('#button');
+let button1 = document.querySelector('#button1');
+button.addEventListener ('click',function(){
+img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/250px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg';
+});
+button1.addEventListener ('click',function(){
+img.src = 'https://www.hse.ru/data/2017/05/17/1171369516/zvezdnoe_nebo.jpeg.(586x434x123).jpeg';
+});
+    </script>
+</body>
+</html>

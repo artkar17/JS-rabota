@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+<body>
+    <input id="elem" value="text">
+    <button id="button">x</button> 
+    <p id="p"></p>
+    <script>
+let elem = document.querySelector('#elem');
+let p = document.querySelector('#p');
+let button = document.querySelector('#button');
+button.addEventListener ('click',function(){
+p.innerHTML = elem.value;
+});
+    </script>
+</body>
+</html>

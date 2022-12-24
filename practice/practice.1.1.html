@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+   
+</head>
+<body>
+    
+<input id="tg">
+<button onclick="fun()">^2</button>
+<p id="p">=</p>
+<input id="tg1">
+<button onclick="fun1()">Периметр</button>
+<p id="p1">=</p>
+
+<script>
+    
+    function fun() {
+        let a = Number(document.querySelector('#tg').value);
+        let p = document.querySelector('#p');
+        p.innerHTML = '= ' + a*a;
+    }
+
+    function fun1() {
+        let b = Number(document.querySelector('#tg1').value);
+        let p1 = document.querySelector('#p1');
+        p1.innerHTML = '= ' + b*4;
+    }
+    
+</script>
+
+
+
+</body>
+</html>

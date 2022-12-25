@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+   
+</head>
+<body>
+    <p>Треугольник</p>
+<br>
 
+
+<p>h<input id="th" style="width: 20px;margin-left: 10px;"></p>
+<p>a<input id="th1" style="width: 20px;margin-left: 10px;"></p>
+<button onclick="fun()" style="margin-left: 10px;">Площадь</button>
+<p id="p">=</p>
+
+
+
+<input id="tg1" style="width: 20px;margin-left: 10px;">
+<input id="tg2" style="width: 20px;margin-left: 10px;">
+<input id="tg3" style="width: 20px;margin-left: 10px;">
+<button onclick="fun1()" style="margin-left: 10px;">Периметр</button>
+<p id="p1">=</p>
+
+<script>
+    
+    function fun() {
+        let a = Number(document.querySelector('#th').value);
+        let b = Number(document.querySelector('#th1').value);
+        let p = document.querySelector('#p');
+        p.innerHTML = '= ' + (a*b)*0.5;
+    }
+
+    function fun1() {
+        let b = Number(document.querySelector('#tg1').value);
+        let c = Number(document.querySelector('#tg2').value);
+        let d = Number(document.querySelector('#tg3').value);
+        let p1 = document.querySelector('#p1');
+        p1.innerHTML = '= ' + Number(b+c+d);
+    }
+    
+</script>

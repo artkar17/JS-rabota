@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+   
+</head>
+<body>
+    <p>Треугольник по трём сторонам</p>
+<br>
+<p>a<input id="th" value="3" style="width: 20px;margin-left: 10px;"></p>
+<p>b<input id="th1" value="4" style="width: 20px;margin-left: 10px;"></p>
+<p>c<input id="th2" value="5" style="width: 20px;margin-left: 10px;"></p>
+<button onclick="fun()" style="margin-left: 10px;">Площадь</button>
+<p id="p">=</p>
+<script>
+    
+    function fun() {
+        let a = Number(document.querySelector('#th').value);
+        let b = Number(document.querySelector('#th1').value);
+        let c = Number(document.querySelector('#th2').value);
+        let t = document.querySelector('#p');
+        let p = Number((a+b+c)/2)
+        t.innerHTML = '= ' + (Math.sqrt(p*(p-a)*(p-b)*(p-c)));
+    } 
+</script>
+</body>
+</html>

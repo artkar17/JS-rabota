@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<body>
+<div style="display: flex;">   
+<p>a = <input id="a" style="width:15px;" value=""> x^2 + </p>
+<p>b = <input id="b" style="width:15px;" value=""> x + </p>
+<p>c = <input id="c" style="width:15px;" value=""> = 0</p>
+</div>
+<input type='button' value="Вычислить" onclick="fun()">
+<div>
+<p id="elem">x1 = ?</p>
+<p id="elem1">x2 = ?</p>
+<p id="elem2">D = ?</p>
+</div>
+<script>
+function fun(){
+    let a = Number(document.querySelector('#a').value);
+    let b = Number(document.querySelector('#b').value);
+    let c = Number(document.querySelector('#c').value);
+    let p = document.querySelector('#elem');
+    let p1 = document.querySelector('#elem1');
+    let p2 = document.querySelector('#elem2');
+let d = (Math.pow(b, 2)-4 *a*c);
+if (d>0){
+p.innerHTML = 'x1 = ' + (-b + Math.sqrt(d))/(a*2);
+p1.innerHTML = 'x2 = ' + (-b - Math.sqrt(d))/(a*2);
+} else if (d==0) {
+    p.innerHTML = 'x1 = ' + (-b + Math.sqrt(d))/(a*2);
+    p1.innerHTML = 'Один корень'; 
+} else if (d<0) {
+    p.innerHTML = 'Нет корней';
+    p1.innerHTML = '∙☻°';
+};
+p2.innerHTML = 'D = ' + d;
+}
+</script>    
+</body>
+</html>

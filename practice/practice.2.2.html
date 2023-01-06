@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>practice</title>
+</head>
+<body>
+    <div style="display: flex; ">
+<input id="a">
+<input id="b">
+<input id="c">
+</div>
+<input type='button' value="Вычислить" onclick="fun()">
+<p id="elem">Вычислить </p>
+<script>
+function fun(){
+    let a =  Number(document.querySelector('#a').value);
+    let b =  Number(document.querySelector('#b').value);
+    let c =  Number(document.querySelector('#c').value);
+    let p = document.querySelector('#elem');
+
+    let sum = Math.pow(a,2)+Math.pow(b,2);
+    if (sum == Math.pow(c,2)){
+        p.innerHTML = 'являются тройкой пифагора';
+    } else {
+        p.innerHTML = 'не являются тройкой пифагора';
+    }
+}
+
+</script>    
+</body>
+</html>

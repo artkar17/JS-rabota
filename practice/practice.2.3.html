@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>practice</title>
+  </head>
+  <body>
+    <input id="a">
+    <button type="button" id="buttom">Расчитать</button>
+    <div id="body"></div>
+    <script>
+        document.querySelector("#buttom").onclick = function(){
+          let mass = [],
+              body = document.getElementById("body"),
+              a = document.querySelector('#a').value;
+
+          for(let i = 0; i <= a; i++){
+            if(a%i == 0){
+                mass.push(i);
+            }
+          }
+          mass.forEach(e => body.innerHTML += "<p>" + "○ " + e + "</p>");
+        }
+    </script>
+  </body>
+</html>
